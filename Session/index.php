@@ -19,8 +19,6 @@ session_start();
         <br> <br>
     <input type="submit" name="submit">
     </form>
-    This is login page <br>
-    <a href="home.php">this to home page</a> 
 </body>
 </html>
 <?php
