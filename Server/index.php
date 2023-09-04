@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+    <label for="username"><input type="text" name="username" id="username"></label>
+<input type="submit" value="submit">
+</form>
 </body>
 </html>
 <?php
