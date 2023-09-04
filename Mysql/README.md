@@ -19,3 +19,17 @@ this sql code inser data to the database.
 ### mysqli_close($conn);
 
 This line of code close the connection.
+
+### mysqli_fetch_assoc($result);
+
+$sql = "SELECT * FROM users";
+
+$result = mysqli_query($conn, $sql);
+
+if(mysqli_num_rows($result) > 0){
+    while($row = mysqli_fetch_assoc($result)){
+        echo "id: " . $row["id"]. " - Name: " . $row["username"]. " " . $row["password"]. "<br>";
+    }
+}
+
+to retrive data from the database
