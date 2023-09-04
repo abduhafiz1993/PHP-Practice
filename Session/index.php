@@ -29,8 +29,9 @@ if(isset($_POST['submit'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
         $_SESSION['username'] = $username;
-        $_SESSION['password'] = $password;
-
-        
+        $_SESSION['password'] = $password; 
+        header("Location: home.php");  
+    }else{
+        echo "Please enter username and password";
     }}
 ?>
